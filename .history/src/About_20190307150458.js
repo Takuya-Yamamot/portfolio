@@ -1,0 +1,77 @@
+import React, {PureComponent} from 'react';
+import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+
+const styles = theme => ({
+    card: {
+        minWidth: 275,
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+    },
+    layout: {
+        width: 'auto',
+        marginLeft: theme.spacing.unit * 3,
+        marginRight: theme.spacing.unit * 3,
+        [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+          width: 1100,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        },
+      },
+      cardGrid: {
+        padding: `${theme.spacing.unit * 8}px 0`,
+      },
+    // title: {
+    //     fontSize: 14,
+    // },
+    // pos: {
+    //     marginBottom: 12,
+    // },
+});
+
+function About(props) {
+    const { classes } = props;
+
+        return(
+            <div className={classNames(classes.layout, classes.cardGrid)}>
+            <Card className={classes.card}>
+            <CardContent>
+
+                <h1>About</h1>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>山本卓也</td>
+                    </tr>
+                    <tr>
+                        <th>School</th>
+                        <th>BirthDay</th>
+                        <th>GitHub</th>
+                        <th>Qiita</th>
+                        <th>Facebook</th>
+                        <th>Twitter</th>
+                        <th>Instagram</th>
+                        <th>Mail</th>
+                    </tr>
+                    <tr>
+                        <td>大阪大学経済学部</td>
+                        <td>1995年8月17日</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>tyamamoあっとgmail.com</td>
+                    </tr>
+                </table>
+            </CardContent>
+            </Card>
+            </div>
+        );
+
+}
+
+export default withStyles(styles)(About);

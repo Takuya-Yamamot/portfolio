@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "hosting": "takuya-portfolio",
+    "default": "takuya-portfolio"
+  }
+}

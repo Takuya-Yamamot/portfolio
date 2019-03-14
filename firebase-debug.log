@@ -1,0 +1,25 @@
+[debug] [2019-03-14T10:06:27.674Z] ----------------------------------------------------------------------
+[debug] [2019-03-14T10:06:27.676Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-03-14T10:06:27.676Z] CLI Version:   6.5.0
+[debug] [2019-03-14T10:06:27.676Z] Platform:      darwin
+[debug] [2019-03-14T10:06:27.676Z] Node Version:  v10.13.0
+[debug] [2019-03-14T10:06:27.677Z] Time:          Thu Mar 14 2019 19:06:27 GMT+0900 (GMT+09:00)
+[debug] [2019-03-14T10:06:27.677Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-14T10:06:27.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-14T10:06:27.689Z] > authorizing via signed-in user
+[debug] [2019-03-14T10:06:27.690Z] [iam] checking project takuya-portfolio for permissions ["firebase.projects.get"]
+[debug] [2019-03-14T10:06:27.692Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/takuya-portfolio:testIamPermissions  
+
+[debug] [2019-03-14T10:06:28.852Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-14T10:06:28.854Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/takuya-portfolio  
+ 
+[debug] [2019-03-14T10:06:29.703Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/takuya/self_portfolio/portfolio'...
+[info] 
+[debug] [2019-03-14T10:06:29.705Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/211472547987/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-14T10:06:30.690Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
