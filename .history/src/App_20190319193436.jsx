@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+// import Grid from '@material-ui/core/Grid';
 import About from './About.jsx';
 import Top from './Top';
 import Header from './Header';
@@ -20,7 +21,6 @@ class App extends PureComponent {
           <Route path='/About' component={About} />
           <Route path='/Works' component={Works} />
           <Route path='/Skills' component={Skills} />
-
         </div>
      </React.Fragment>
    </Router>

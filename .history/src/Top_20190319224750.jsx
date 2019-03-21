@@ -1,8 +1,7 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
-import classNames from 'classnames'
 import Grid from '@material-ui/core/Grid';
-import App from './App.css'
+import Scrollable from 'hide-scrollbar-react';
 
 
 const styles = theme => ({
@@ -16,7 +15,8 @@ function Top(props) {
     const { classes } = props;
 
         return(
-            <div className={classNames(classes.root, App.scroll)}>
+            <Scrollable>
+            <div className={classes.root}>
             <Grid
             container
             spacing={0}
@@ -32,6 +32,7 @@ function Top(props) {
             <Grid item xs={3}></Grid>
             </Grid>
             </div>
+            </Scrollable>
         );
 }
 

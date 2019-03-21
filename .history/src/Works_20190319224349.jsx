@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
 import {withStyles} from '@material-ui/core/styles';
+import Scrollable from 'hide-scrollbar-react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-// import  App from ''
 
 const styles = theme => ({
     root: {
@@ -36,6 +36,7 @@ function Works(props) {
     const { classes } = props;
 
     return (
+        <Scrollable>
         <div style={{overflowX : 'auto',fontSize: '14px'}} className={classNames(classes.root, classes.cardGrid)}>
             <Card className={classes.card}>  {/* ざっくり家計簿2019 */}
                 <CardContent>
@@ -72,6 +73,7 @@ function Works(props) {
                 </CardContent>
             </Card>
         </div>
+        </Scrollable>
     );
 }
 

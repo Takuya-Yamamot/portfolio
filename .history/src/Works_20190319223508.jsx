@@ -4,7 +4,7 @@ import {withStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-// import  App from ''
+import {Scrollars} from 'react-custom-scrollbars';
 
 const styles = theme => ({
     root: {
@@ -36,7 +36,9 @@ function Works(props) {
     const { classes } = props;
 
     return (
+
         <div style={{overflowX : 'auto',fontSize: '14px'}} className={classNames(classes.root, classes.cardGrid)}>
+            <Scrollars>
             <Card className={classes.card}>  {/* ざっくり家計簿2019 */}
                 <CardContent>
                     <Grid container justify="center" alignItems="center">
@@ -71,6 +73,7 @@ function Works(props) {
 
                 </CardContent>
             </Card>
+            </Scrollars>
         </div>
     );
 }

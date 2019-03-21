@@ -20,7 +20,6 @@ class App extends PureComponent {
           <Route path='/About' component={About} />
           <Route path='/Works' component={Works} />
           <Route path='/Skills' component={Skills} />
-
         </div>
      </React.Fragment>
    </Router>

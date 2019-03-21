@@ -4,12 +4,11 @@ import {withStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-// import  App from ''
 
 const styles = theme => ({
     root: {
         backgroundColor: 'white',
-        overflowX: 'auto',
+        scroll: 'paper',
     },
     card: {
         minWidth: 210,
@@ -36,7 +35,7 @@ function Works(props) {
     const { classes } = props;
 
     return (
-        <div style={{overflowX : 'auto',fontSize: '14px'}} className={classNames(classes.root, classes.cardGrid)}>
+        <div className={classNames(classes.root, classes.cardGrid)}>
             <Card className={classes.card}>  {/* ざっくり家計簿2019 */}
                 <CardContent>
                     <Grid container justify="center" alignItems="center">
@@ -71,6 +70,7 @@ function Works(props) {
 
                 </CardContent>
             </Card>
+
         </div>
     );
 }

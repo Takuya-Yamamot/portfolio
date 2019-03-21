@@ -22,7 +22,7 @@ const styles = theme => ({
   })
 
   const Header = ({ classes }) => (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Toolbar>
         <Grid container justify="center" className={classes.root}>
         <Grid item xs={3}></Grid>
@@ -31,7 +31,7 @@ const styles = theme => ({
               <Link to='/' style={{ textDecoration: 'none', color: "white" }}>Top</Link>
             </Button>
             <Button  component="div" display="inline" className={classes.button} >
-                <Link to='/About' style={{ textDecoration: 'none', color: "white" }}>About</Link>
+                <Link to='/About.jsx' style={{ textDecoration: 'none', color: "white" }}>About</Link>
             </Button>
             <Button  component="div" display="inline" className={classes.button} >
                 <Link to='/Works' style={{ textDecoration: 'none', color: "white" }}>Works</Link>

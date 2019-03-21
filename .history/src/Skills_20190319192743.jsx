@@ -8,7 +8,6 @@ import Grid from '@material-ui/core/Grid';
 const styles = theme => ({
     root: {
         backgroundColor: 'white',
-        scroll: 'paper',
     },
     card: {
         minWidth: 210,

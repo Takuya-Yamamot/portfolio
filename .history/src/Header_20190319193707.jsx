@@ -22,7 +22,7 @@ const styles = theme => ({
   })
 
   const Header = ({ classes }) => (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <Toolbar>
         <Grid container justify="center" className={classes.root}>
         <Grid item xs={3}></Grid>

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Scrollable from 'hide-scrollbar-react';
 import About from './About.jsx';
 import Top from './Top';
 import Header from './Header';
@@ -15,13 +16,14 @@ class App extends PureComponent {
    <Router>
      <React.Fragment>
         <Header />
+        <Scrollable>
         <div>
           <Route exact path='/' component={Top} />
           <Route path='/About' component={About} />
           <Route path='/Works' component={Works} />
           <Route path='/Skills' component={Skills} />
-
         </div>
+        </Scrollable>
      </React.Fragment>
    </Router>
     );

@@ -1,8 +1,6 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
-import classNames from 'classnames'
 import Grid from '@material-ui/core/Grid';
-import App from './App.css'
 
 
 const styles = theme => ({
@@ -16,7 +14,7 @@ function Top(props) {
     const { classes } = props;
 
         return(
-            <div className={classNames(classes.root, App.scroll)}>
+            <div className={classes.root}>
             <Grid
             container
             spacing={0}
