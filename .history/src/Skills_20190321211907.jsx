@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 const styles = theme => ({
     root: {
         backgroundColor: 'white',
+        scroll: 'paper',
     },
     card: {
         height: '100%',
@@ -114,7 +115,7 @@ function Skills(props) {
                             </Grid>
                             <Grid container justify="center">
                                 <p>IELTS6.5取得。
-                                    ９か月間のアメリカ交換留学でナンパ~プレゼン~交渉と幅広い場面で使用。
+                                    ９か月間のアメリカ交換留学でナンパ~プレゼン~交渉といった幅広い状況下で使用。
                                     インターン先での海外出身エンジニアとも英語での意思疎通に挑戦中。
                                 </p>
                             </Grid>

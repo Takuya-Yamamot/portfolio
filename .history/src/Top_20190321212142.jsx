@@ -33,12 +33,13 @@ function Top(props) {
             justify="center"
             style={{ minHeight: '100vh' }}
             >
-            <Grid item xs={8}>
+            <Grid item xs={6}>
                 <h1>Welcome To Takuya's Room</h1>
             </Grid>
             </Grid>
             </div>
         );
 }
+
 
 export default withStyles(styles)(Top);

@@ -61,7 +61,7 @@ function Works(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item sm={6} md={5} lg={5}>
+                <Grid item sm={6} md={4} lg={3}>
                     < Card className={classes.card}> {/* ポートフォリオサイト */}
                         <CardContent>
                             <Grid container justify="center" alignItems="center">

@@ -25,16 +25,22 @@ const styles = theme => ({
     <AppBar position="fixed">
       <Toolbar>
         <Grid container justify="center" className={classes.root}>
-          <Grid item xs={3} md={5} lg={3}>
+          <Grid item xs={3} sd={3} md={3} lg={3}>
               <Button  component="div" display="inline" className={classes.button} >
                 <Link to='/' style={{ textDecoration: 'none', color: "white" }}>Top</Link>
               </Button>
+              </Grid>
+              <Grid item xs={3} sd={3} md={3} lg={3}>
               <Button  component="div" display="inline" className={classes.button} >
                   <Link to='/About' style={{ textDecoration: 'none', color: "white" }}>About</Link>
               </Button>
+              </Grid>
+              <Grid item xs={3} sd={3} md={3} lg={3}>
               <Button  component="div" display="inline" className={classes.button} >
                   <Link to='/Works' style={{ textDecoration: 'none', color: "white" }}>Works</Link>
               </Button>
+              </Grid>
+              <Grid item xs={3} sd={3} md={3} lg={3}>
               <Button  component="div" display="inline" className={classes.button} >
                   <Link to='/Skills' style={{ textDecoration: 'none', color: "white" }}>Skills</Link>
               </Button>

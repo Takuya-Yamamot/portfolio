@@ -31,7 +31,7 @@ function Top(props) {
             direction="column"
             alignItems="center"
             justify="center"
-            style={{ minHeight: '100vh' }}
+            // style={{ minHeight: '100vh' }}
             >
             <Grid item xs={8}>
                 <h1>Welcome To Takuya's Room</h1>
@@ -40,5 +40,6 @@ function Top(props) {
             </div>
         );
 }
+
 
 export default withStyles(styles)(Top);

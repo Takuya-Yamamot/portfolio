@@ -29,7 +29,7 @@ function Top(props) {
             container
             spacing={0}
             direction="column"
-            alignItems="center"
+
             justify="center"
             style={{ minHeight: '100vh' }}
             >
@@ -40,5 +40,6 @@ function Top(props) {
             </div>
         );
 }
+
 
 export default withStyles(styles)(Top);

@@ -43,7 +43,7 @@ function Works(props) {
     return (
         <div className={classNames(classes.root, classes.layout, classes.cardGrid)}>
             <Grid container spacing={40} justify="center" >
-                <Grid item sm={6} md={5} lg={5}>
+                <Grid item sm={6} md={4} lg={3}>
                     <Card className={classes.card}>  {/* ざっくり家計簿2019 */}
                         <CardContent>
                             <Grid container justify="center" alignItems="center">
@@ -61,7 +61,7 @@ function Works(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item sm={6} md={5} lg={5}>
+                <Grid item sm={6} md={4} lg={3}>
                     < Card className={classes.card}> {/* ポートフォリオサイト */}
                         <CardContent>
                             <Grid container justify="center" alignItems="center">

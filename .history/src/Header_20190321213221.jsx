@@ -25,7 +25,8 @@ const styles = theme => ({
     <AppBar position="fixed">
       <Toolbar>
         <Grid container justify="center" className={classes.root}>
-          <Grid item xs={3} md={5} lg={3}>
+        <Grid item={3}></Grid>
+          <Grid item xs={3} md={7} lg={3}>
               <Button  component="div" display="inline" className={classes.button} >
                 <Link to='/' style={{ textDecoration: 'none', color: "white" }}>Top</Link>
               </Button>
@@ -40,6 +41,7 @@ const styles = theme => ({
               </Button>
           </Grid>
         </Grid>
+        <Grid item={3}></Grid>
       </Toolbar>
     </AppBar>
   )
