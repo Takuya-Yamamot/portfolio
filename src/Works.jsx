@@ -41,7 +41,7 @@ function Works(props) {
   const { classes } = props;
   const works = [
     {
-      title: 'ざっくり家計簿2019(開発停止中)',
+      title: 'ざっくり家計簿2019\n(開発停止中)',
       explain: '母親でも使えるシンプルで使いやすい家計簿を作ろうと思い制作。今後はfirebaseで個人ごとにアカウントを作成して使えるようにしていきたい。',
       link: <a href="https://kakeibo2019.herokuapp.com/">URL</a>
     },
