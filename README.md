@@ -11,8 +11,8 @@ This is my portfolio site. https://takuya-portfolio.firebaseapp.com/
 
 ## Build up
 
-'''shell
+```shell
 $ git clone git@github.com:Takuya-Yamamot/portfolio.git
 $ yarn start
-'''
+```
 
