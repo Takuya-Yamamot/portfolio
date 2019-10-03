@@ -45,7 +45,7 @@ function Skills(props) {
       span: '2018/10'
     },
     {
-      title: 'Vanila.js,React.js,Typescript',
+      title: 'Vanila.js,React.js',
       explain: 'インターン先の業務でReact+Typescriptの開発。 個人の開発でReactを使用。 アルゴリズム問題やPaizaスキルチェックはnode.jsを使用。',
       span: '2018/9'
     },
@@ -79,7 +79,7 @@ function Skills(props) {
             <Card className={classes.card}>
               <CardContent>
                 <div>
-                  <Grid container justify="center" alignItems="center">
+                  <Grid container justify="center" alignItems="center" noWrap>
                     <h1>{content.title}</h1>
                   </Grid>
                   <Grid container justify="center">

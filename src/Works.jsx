@@ -41,8 +41,8 @@ function Works(props) {
   const { classes } = props;
   const works = [
     {
-      title: 'ざっくり家計簿2019\n(開発停止中)',
-      explain: '母親でも使えるシンプルで使いやすい家計簿を作ろうと思い制作。今後はfirebaseで個人ごとにアカウントを作成して使えるようにしていきたい。',
+      title: 'ざっくり家計簿2019',
+      explain: '母親でも使えるシンプルで使いやすい家計簿を作ろうと思い制作。今後はfirebaseで個人ごとにアカウントを作成して使えるようにしていきたい。(現在開発中止中)',
       link: <a href="https://kakeibo2019.herokuapp.com/">URL</a>
     },
     {
@@ -59,7 +59,7 @@ function Works(props) {
             <Card className={classes.card}>
               <CardContent>
                 <div>
-                  <Grid container justify="center" alignItems="center">
+                  <Grid container justify="center" alignItems="center" noWrap>
                     <h1>{work.title}</h1>
                   </Grid>
                   <Grid container justify="left" alignItems="center">
