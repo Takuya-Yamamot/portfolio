@@ -38,50 +38,44 @@ const styles = theme => ({
 });
 
 function Works(props) {
-    const { classes } = props;
-
-    return (
-        <div className={classNames(classes.root, classes.layout, classes.cardGrid)}>
-            <Grid container spacing={40} justify="center" >
-                <Grid item sm={6} md={5} lg={5}>
-                    <Card className={classes.card}>  {/* ざっくり家計簿2019 */}
-                        <CardContent>
-                            <Grid container justify="center" alignItems="center">
-                                <h1>ざっくり家計簿2019</h1>
-                            </Grid>
-                            <Grid container justify="left" alignItems="center">
-                                <p>
-                                    母親でも使えるシンプルで使いやすい家計簿を作ろうと思い制作。
-                                    今後はfirebaseで個人ごとにアカウントを作成して使えるようにしていきたい。
-                                </p>
-                            </Grid>
-                            <Grid container justify="center">
-                                <p><a href="https://kakeibo2019.herokuapp.com/">URL</a></p>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item sm={6} md={5} lg={5}>
-                    <Card className={classes.card}> {/* ポートフォリオサイト */}
-                        <CardContent>
-                            <Grid container justify="center" alignItems="center">
-                                <h1>Portfolioサイト</h1>
-                            </Grid>
-                            <Grid container justify="center">
-                                <p>
-                                    Reactをインターン先で使っているので、学習を兼ねてポートフォリオサイトを作成した。
-                                    Material-UIを使ってデザインを組み立てていった。
-                                </p>
-                            </Grid>
-                            <Grid container justify="center">
-                                <p><a href="https://takuya-portfolio.firebaseapp.com">URL</a></p>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </Grid>
-            </Grid>
-        </div>
-    );
+  const { classes } = props;
+  const works = [
+    {
+      title: 'ざっくり家計簿2019(開発停止中)',
+      explain: '母親でも使えるシンプルで使いやすい家計簿を作ろうと思い制作。今後はfirebaseで個人ごとにアカウントを作成して使えるようにしていきたい。',
+      link: <a href="https://kakeibo2019.herokuapp.com/">URL</a>
+    },
+    {
+      title: 'Portfolioサイト',
+      explain: 'Reactをインターン先で使っているので、学習を兼ねてポートフォリオサイトを作成した。 Material-UIを使ってデザインを組み立てていった。',
+      link: <a href="https://takuya-portfolio.firebaseapp.com">URL</a>
+    }
+  ];
+  return (
+    <div className={classNames(classes.root, classes.layout, classes.cardGrid)}>
+      <Grid container spacing={40} justify="center" >
+        {works.map((work) => (
+          <Grid item sm={6} md={5} lg={5}>
+            <Card className={classes.card}>
+              <CardContent>
+                <div>
+                  <Grid container justify="center" alignItems="center">
+                    <h1>{work.title}</h1>
+                  </Grid>
+                  <Grid container justify="left" alignItems="center">
+                    <p>{work.explain}</p>
+                  </Grid>
+                  <Grid container justify="center">
+                    <p>{work.link}</p>
+                  </Grid>
+                </div>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
 }
 
 export default withStyles(styles)(Works);
